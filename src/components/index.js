@@ -1,3 +1,5 @@
 import Header from './Header';
+import SearchFilter from './SearchFilter';
+import CategoriesFilter from './CategoriesFilter';
 
-export { Header };
+export { Header, SearchFilter, CategoriesFilter };
