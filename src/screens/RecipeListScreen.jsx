@@ -2,7 +2,12 @@ import { View, Text, StyleSheet } from 'react-native';
 
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { Header, SearchFilter, CategoriesFilter } from '../components';
+import {
+  Header,
+  SearchFilter,
+  CategoriesFilter,
+  RecipeCards,
+} from '../components';
 
 const RecipeListScreen = ({ navigation }) => {
   return (
@@ -14,6 +19,7 @@ const RecipeListScreen = ({ navigation }) => {
         iconColor="#f96163"
       />
       <CategoriesFilter />
+      <RecipeCards />
     </SafeAreaView>
   );
 };
@@ -22,6 +28,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
+    backgroundColor: '#fff',
   },
 });
 
